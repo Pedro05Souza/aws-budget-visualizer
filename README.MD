@@ -31,7 +31,9 @@ Once installed, configure the AWS CLI with your credentials:
 ## 🚀 Features  
 
 - **Real-Time Insights**: Instantly view your AWS budgets and spending limits.  
-- **Time-Efficient**: Focus on your priorities with quick access to budget data.  
+- **Time-Efficient**: Focus on your priorities with quick access to budget data.
+- **API Integration**: Seamlessly integrate with other applications for enhanced functionality.
+- **CLI Support**: Execute commands directly from your terminal for a more efficient workflow.  
 
 ---
 
@@ -79,23 +81,11 @@ source venv/bin/activate
 pip install -r requirements.txt
  ```
 
-### 🖥️ Running the Application  
+---
 
-Once the environment is set up and dependencies are installed, you're ready to go! Start the application by running:  
+### 🖥️ Running the Application
 
-```bash
-uvicorn main:app --reload
-```
+There are two main ways to run the application:
 
-### 🌐 Accessing the Application
-
-For a better visualization and interactive API experience, open your browser and navigate to the **Swagger UI**:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-The Swagger UI provides:
-
-- A detailed view of all API endpoints.
-- The ability to test API requests directly from your browser.
+- [API](docs/API.MD)
+- [CLI](docs/CLI.MD)

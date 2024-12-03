@@ -1,6 +1,6 @@
 from ..Entities import Budget
 from typing import List
-from ..utils import payload_to_budget
+from tools import payload_to_budget
 
 __all__ = ["GetAllBudgetsUseCase"]
 
