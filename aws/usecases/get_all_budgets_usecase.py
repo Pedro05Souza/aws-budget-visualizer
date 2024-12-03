@@ -1,14 +1,16 @@
-from Entities import Budget
+from ..Entities import Budget
 from typing import List
-from utils import payload_to_budget
+from ..utils import payload_to_budget
+
+__all__ = ["GetAllBudgetsUseCase"]
 
 class GetAllBudgetsUseCase():
 
-    def __init__(self, budget_fetcher) -> None:
-        self.budget_fetcher = budget_fetcher
+    def __init__(self, fetch_all_budgets) -> None:
+        self.fetch_all_budgets = fetch_all_budgets
 
     def get_all_budgets(self) -> List[Budget]:
-        payload = self.budget_fetcher()
+        payload = self.fetch_all_budgets()
 
         budgets = []
 
@@ -16,5 +18,4 @@ class GetAllBudgetsUseCase():
 
             budget = payload_to_budget(budget_data)
             budgets.append(budget)
-
         return budgets
