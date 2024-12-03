@@ -1,1 +1,1 @@
-from Budget import *
+from .Budget import *
