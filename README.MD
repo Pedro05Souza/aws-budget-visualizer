@@ -2,6 +2,29 @@
 
 A simple, user-friendly solution to monitor and manage your AWS budgets effortlessly! This tool provides a clear snapshot of your budget status, removing the hassle of navigating through the AWS Console.  
 
+
+---
+
+## ⚠️ Warning  
+
+This project requires the **AWS CLI** to be installed and properly configured on your system.  
+
+---
+
+### 📥 AWS CLI Installation  
+Follow the official guide to install the AWS CLI:  
+[Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)  
+
+---
+
+### 🔧 Setting Up AWS CLI Credentials  
+Once installed, configure the AWS CLI with your credentials:  
+[AWS CLI Quickstart Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)  
+
+---
+
+> **Note**: Without the AWS CLI and configured credentials, this project will not function as intended. Ensure your setup is complete before proceeding.
+
 ---
 
 ## 🚀 Features  
