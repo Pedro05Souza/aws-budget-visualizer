@@ -13,7 +13,7 @@ class BudgetManagerCLI():
         pass
 
     @cli.command()
-    def get_all_budgets():
+    def get_all():
         budget_repository = BudgetRepository()
         get_all_budgets_usecase = GetAllBudgetsUseCase(budget_repository.get_all_budgets)
         budgets = get_all_budgets_usecase.get_all_budgets()
@@ -25,7 +25,7 @@ class BudgetManagerCLI():
 
     @cli.command()
     @click.argument('budget_name')
-    def get_budget(budget_name):
+    def get_one(budget_name):
         budget_repository = BudgetRepository()
         get_budget_usecase = GetBudgetUsecase(budget_repository.get_budget, budget_name)
         budget = get_budget_usecase.get_budget()
