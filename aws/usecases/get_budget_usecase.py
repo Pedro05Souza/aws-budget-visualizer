@@ -15,4 +15,4 @@ class GetBudgetUsecase():
         if not payload:
             raise BudgetNotFoundError
         
-        return payload_to_budget(payload)
+        return payload_to_budget(payload['Budget'])

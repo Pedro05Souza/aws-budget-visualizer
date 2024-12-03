@@ -14,8 +14,7 @@ class GetAllBudgetsUseCase():
 
         budgets = []
 
-        for budget_data in payload:
-
+        for budget_data in payload['Budgets']:
             budget = payload_to_budget(budget_data)
             budgets.append(budget)
         return budgets
