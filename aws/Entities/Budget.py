@@ -7,3 +7,4 @@ class Budget (BaseModel):
     currency: str
     current_expense: float
     threshold: float
+    forecasted_expense: float

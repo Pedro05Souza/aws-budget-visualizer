@@ -9,5 +9,6 @@ def payload_to_budget(payload: dict) -> Budget:
     threshold = payload["BudgetLimit"]["Amount"]
     currency = payload["BudgetLimit"]["Unit"]
     expense = payload["CalculatedSpend"]["ActualSpend"]["Amount"]
+    forecasted_expense = payload["CalculatedSpend"]["ForecastedSpend"]["Amount"]
 
-    return Budget(name=name, currency=currency, current_expense=expense, threshold=threshold)
+    return Budget(name=name, currency=currency, current_expense=expense, threshold=threshold, forecasted_expense=forecasted_expense)
