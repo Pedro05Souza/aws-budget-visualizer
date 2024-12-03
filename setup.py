@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'aws- = aws.cli.budget_cli:BudgetManagerCLI.cli',
+            'aws-budget = aws.cli.budget_cli:BudgetManagerCLI.cli',
         ]
     }
 )
