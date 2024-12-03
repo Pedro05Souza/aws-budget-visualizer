@@ -9,5 +9,5 @@ pip install .
 After installation, you can access the CLI by running:
 
 ```bash
-aws-budget-display --help
+aws-budget --help
 ```
